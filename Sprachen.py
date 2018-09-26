@@ -39,10 +39,8 @@ def buchstaben_lesen(wlist):
             else:
                 #Eintrag existiert schon
 
-                neu = dictionary[x] + 1
-                dictionary[x] = neu
-                # "=+" funktioniert aus irgendeinem Grund nicht
-
+                dictionary[x] += 1  
+                #Eintrag inkrementieren
 
     for x in dictionary:
         return(dictionary)
