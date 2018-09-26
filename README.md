@@ -5,6 +5,8 @@ Das Programm erkennt bis jetzt aus einem zusammenhängenden text ohne umbrüche 
 
 Außerdem zählt es von dem Text ohne die Namen die Häufigkeit der jeweiligen Buchstaben und Zeichen und speichert diese bis jetzt in einem dictionary.
 
+
+
 Nächste Schritte sind:
 
    Scraping und Import der Texte
