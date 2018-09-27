@@ -48,13 +48,18 @@ print()
 
 
 def csv_merge(d):
-    try:
+    #try:
 
         with open('letterdata.csv') as csvfile:
+
             ftg = {}
 
             nd = dict(filter(None, csv.reader(csvfile)))
             #liest file in dictionary nd
+
+            if nd is None:
+                nd = {'a':0}
+                #neues file
 
             for x in nd:
                 if nd[x] is not '':
@@ -74,12 +79,17 @@ def csv_merge(d):
             nd.update(ftg)
             #pusht die neuen zellen auf nd
 
+            try:
+                del nd[',']
+            except:
+                pass
+
             #print(ftg)
             return(nd)
 
 
-    except:
-        print('ERROR_LESEN')
+    #except:
+    #    print('ERROR_LESEN')
 
 
 def csv_speichern(d):
