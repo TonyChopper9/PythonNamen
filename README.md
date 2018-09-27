@@ -15,3 +15,7 @@ Nächste Schritte sind:
    überschrieben werden)
    
    2. Programm, welches den frontend teil übernimmt (Sprich die tatsächliche Sprachenerkennung durch bezug auf die .csv Prozente)
+
+Update 27.09:
+   
+   Das Programm speichert nun alle neuen daten aus dem gegebenen text in einem .csv file (was leider noch nicht so gut von menschen gelesen werden kann weil excel behindert ist) ohne die vorherigen zu überschreiben sondern addiert die geänderten variablen auf
