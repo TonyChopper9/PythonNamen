@@ -1,10 +1,8 @@
 # PythonProjekte
 
-Das Programm erkennt bis jetzt aus einem zusammenhängenden text ohne umbrüche und tabs namen und entfernt diese.
-(Das Umbrüche und tabs problem könnte man eventuell durch raw input lösen da \n immernoch als "enter" im input() angenommen wird.)
+Das Programm erkennt bis jetzt aus einem zusammenhängenden text namen und entfernt diese.
 
 Außerdem zählt es von dem Text ohne die Namen die Häufigkeit der jeweiligen Buchstaben und Zeichen und speichert diese bis jetzt in einem dictionary.
-
 
 
 Nächste Schritte sind:
