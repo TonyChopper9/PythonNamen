@@ -65,8 +65,11 @@ def csv_merge(d):
                     continue
 
             for x in d:
-                ftg[x] = nd[x] + d[x]
-                #addiert alle zu ändernden zellen in ftg
+                try:
+                    ftg[x] = nd[x] + d[x]
+                    #addiert alle zu ändernden zellen in ftg
+                except:
+                    ftg[x] = d[x]
 
             nd.update(ftg)
             #pusht die neuen zellen auf nd
