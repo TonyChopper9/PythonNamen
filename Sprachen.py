@@ -44,11 +44,9 @@ def buchstaben_lesen(wlist):
     for x in dictionary:
         return(dictionary)
 
-print()
-
 
 def csv_merge(d):
-    #try:
+    try:
 
         with open('letterdata.csv') as csvfile:
 
@@ -88,8 +86,8 @@ def csv_merge(d):
             return(nd)
 
 
-    #except:
-    #    print('ERROR_LESEN')
+    except:
+        print('ERROR_LESEN')
 
 
 def csv_speichern(d):
@@ -104,14 +102,21 @@ def csv_speichern(d):
         print("ERROR_SPEICHERN")
 
 
+def txt_lesen():
+    try:
 
-#csv_speichern(buchstaben_lesen(text_interpretation(input("Testtext: \n"))))
-csv_speichern(csv_merge(buchstaben_lesen(text_interpretation(input("Testtext: \n")))))
+        with open('Datastring.txt', 'r')  as text_origin:
+            return(text_origin.read())
+    except:
+        print("ERROR: Datei nicht vorhanden")
 
 
+def __main__():
+
+    csv_speichern(csv_merge(buchstaben_lesen(text_interpretation(txt_lesen()))))
 
 
-
+__main__()
 
 
 #Fehlversuche Sammlung:
