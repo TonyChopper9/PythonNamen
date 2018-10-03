@@ -4,17 +4,23 @@ import csv
 
 def text_interpretation(text):
 
+    txtRegex = re.compile(r'[a-z] [A-Z][a-z]+')
+    namenRegex = re.compile(r'[A-Z][a-z]+')
+    #beide Regex patterns
+
+    _namen = txtRegex.findall(text)
+    #namen mit ende des Wortes davor
+
+    l = len(_namen)
+    neu_namen = [0]*l
+
+    for i in range(0, l):
+        neu_namen[i] = namenRegex.findall(_namen[i])[0]
+        #neue liste mit nur den worten ohne das davor
+
+
     text_split = text.split()
-    #Teilt den Text an den Leerzeichen
-    #!Zeilenumbruch und tab fehlen noch!
-    #(vielleicht raw input)
-
-    txtRegex = re.compile(r'[A-Z][a-z]+')
-    _namen = list(filter(txtRegex.match, text_split))
-    #Sammelt alle Namen in _namen
-
-    text_noname = set(text_split) - set(_namen)
-    #Entfernt die Namen aus dem Text
+    text_noname = set(text_split) - set(neu_namen)
 
     return text_noname
 
@@ -30,6 +36,11 @@ def buchstaben_lesen(wlist):
         for x in wort:
             #Buchstaben aus Wort lösen
 
+            if x == ',':
+                continue
+            else:
+                pass
+
             if dictionary.get(x) == None:
                 #Falls noch kein Eintrag zum Buchstaben besteht
 
@@ -38,8 +49,8 @@ def buchstaben_lesen(wlist):
             else:
                 #Eintrag existiert schon
 
-                dictionary[x] += 1  
-                #Eintrag inkrementieren
+                dictionary[x] += 1
+                #Eintrag inplementieren
 
     for x in dictionary:
         return(dictionary)

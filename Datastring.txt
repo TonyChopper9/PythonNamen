@@ -1,2 +1,14 @@
-lloooooooooooooooooooooooooooollllllllllllllllllllllllllllllll
- zhg6tg tgb6tg t6g 6tg 66666666666666666666666666666666666666666666666666666666666666666666
+Mit nur wenigen Schritten können Sie Ihren PC optimal einrichten. Die meisten Optionen sind in den Einstellungen verfügbar. Um Sie zu öffnen, wählen Sie Start ? > Einstellungen ? > Erleichterte Bedienung ?. Oder drücken Sie auf der Tastatur Windows-Logo-Taste ? + U. 
+ 
+Hinweis:
+Sie können einige dieser Einstellungen auch über Ihren Anmeldebildschirm erreichen. Wählen Sie einfach das Symbol für Erleichterte Bedienung ? in der unteren rechten Ecke des Bildschirms, mit dem Sie sich bei Ihrem Computer anmelden.
+Au dem Bildschirm wird Folgendes angezeigt
+Die Sprachausgabe ist eine integrierte Funktion, mit der Sie Audiobeschreibungen für Elemente auf dem Bildschirm, z. B. Text und Schaltflächen, hören können. Um die Sprachausgabe über die Tastatur zu starten oder zu beenden, drücken Sie die Windows-Logo-Taste ? + STRG + EINGABE.
+Weitere Informationen zur Verwendung der Sprachausgabe finden Sie online unter Erste Schritte mit der Sprachausgabe.
+Inhalte auf dem Bildschirm besser sichtbar machen
+Die Bildschirmlupe vergrößert Teile Ihres Bildschirms, damit Sie Inhalte leichter erkennen können. Um die Bildschirmlupe zu aktivieren, drücken Sie die Windows-Logo-Taste ? + Pluszeichen (+). Während sie aktiv ist, drücken Sie die Windows-Logo-Taste ? + Plus (+) oder Minus (-), um Bereiche zu vergrößern oder zu verkleinern. 
+Sie können auch einen hohen Kontrast mit kräftigen Farbkombinationen verwenden, um Text und Anwendungen einfacher erkennbar zu machen. Um den hohen Kontrast einzuschalten, drücken Sie die linke ALT-TASTE + linke UMSCHALTTASTE + DRUCKTASTE. 
+Verwenden der Tastatur
+Verwenden Sie die Einrastfunktion, Umschalttasten, Anschlagverzögerung oder die Bildschirmtastatur. Um diese Optionen zu nutzen, wählen Sie Start ? > Einstellungen ? > Erleichterte Bedienung ? > Tastatur ?. 
+Verwenden der Maus
+Zum Ändern von Größe und Farbe des Mauszeigers wählen Sie Start ? > Einstellungen ? > Erleichterte Bedienung ? > Cursor & Zeiger-Größe ?. Um den Mauszeiger mit der Zehnertastatur zu verschieben, wählen Sie Start ? > Einstellungen ? > Erleichterte Bedienung ? > Maus ?.
