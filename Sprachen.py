@@ -59,6 +59,14 @@ def buchstaben_lesen(wlist):
 def csv_merge(d):
     try:
 
+        try:
+            with open('letterdata.csv','r') as nothing:
+                pass
+        except:
+            with open('letterdata.csv', 'w+') as nothing:
+                pass
+        #existenzcheck
+
         with open('letterdata.csv') as csvfile:
 
             ftg = {}
@@ -93,21 +101,44 @@ def csv_merge(d):
             except:
                 pass
 
+
             #print(ftg)
             return(nd)
 
 
     except:
-        print('ERROR_LESEN')
+        print('ERROR_FILE_LESEN')
 
 
 def csv_speichern(d):
-    #Komma geht noch nicht
     try:
 
-        with open('letterdata.csv', 'w') as csvfile:
+        sum_d = 0
+        rel_prob = {}
+        all = []
 
+        for i in d:
+            sum_d += d[i]
+
+        for x in d:
+            rel_prob[x] = d[x] / sum_d
+
+
+        with open('letterdata.csv', 'w') as csvfile:
             [csvfile.write('{0},{1}\n'.format(key, value)) for key, value in d.items()]
+
+        #relative wahrscheinlichkeit file
+        with open('letterdata.csv') as c:
+            r = csv.reader(c)
+
+            for item in r:
+                item.append(rel_prob[item[0]])
+                all.append(item)
+
+        with open('relletterdata.csv', 'w') as outcsv:
+            writer = csv.writer(outcsv, lineterminator = '\n')
+            writer.writerows(all)
+
 
     except:
         print("ERROR_SPEICHERN")
